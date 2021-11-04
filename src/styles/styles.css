@@ -1,0 +1,114 @@
+body {
+  margin: 0px;
+}
+
+/* quitarle los puntos a las listas */
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar {
+  background-color: darkgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 1px gray;
+}
+
+.navbar > li {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: bolder;
+  box-shadow: 2px 2px rgb(150, 150, 150);
+}
+
+/* Cuando el mouse pase por el boton que haga lo siguiente*/
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.12);
+}
+
+.mainButton {
+  background-color: black;
+  color: #fff;
+}
+
+.mainButton:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.sessionButton {
+  background-color: rgb(189, 92, 36);
+}
+
+.sessionButton:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.buscar {
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 4px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buscar > input {
+  outline: none;
+  border: 0px;
+}
+
+.buscar:focus-within {
+  border: 1px solid rgb(0, 76, 240);
+}
+
+.butonBuscar:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.contenedorImagen {
+  width: 350px;
+  height: 320px;
+  display: flex;
+}
+
+.contenedorImagen > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.contenedorImagen:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.cardContainer {
+  display: -webkit-flex;
+  margin: 50px;
+}
+
+.breedCard {
+  margin: 10px;
+  background-color: darkgray;
+}
