@@ -1,3 +1,4 @@
+import CardGeneros from "./components/cardGeneros";
 import "./styles/styles.css";
 import logo from "./media/logo.png";
 import blackmetal from "./media/blackmetal.jpg";
@@ -110,17 +111,6 @@ function App() {
       </main>
       <footer></footer>
     </div>
-  );
-}
-
-function CardGeneros({ nombreGenero, imagen, alt }) {
-  return (
-    <li className="breedCard">
-      <h3>{nombreGenero}</h3>
-      <div className="contenedorImagen">
-        <img src={imagen} alt={alt} />
-      </div>
-    </li>
   );
 }
 
