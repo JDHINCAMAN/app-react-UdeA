@@ -44,99 +44,83 @@ function App() {
             <h1>Generos del Metal</h1>
           </center>
           <ul className="cardContainer">
-            <li className="breedCard">
-              <h3>Thrash Metal</h3>
-              <div className="contenedorImagen">
-                <img src={thrashmetal} alt="Thrash metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Heavy Metal</h3>
-              <div className="contenedorImagen">
-                <img src={heavymetal} alt="Heavy metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Death Metal</h3>
-              <div className="contenedorImagen">
-                <img src={deathmetal} alt="Death metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Black Metal</h3>
-              <div className="contenedorImagen">
-                <img src={blackmetal} alt="Black metal bands" />
-              </div>
-            </li>
-          </ul>
-
-          <ul className="cardContainer">
-            <li className="breedCard">
-              <h3>Power Metal</h3>
-              <div className="contenedorImagen">
-                <img src={powermetal} alt="Power metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Industrial Metal</h3>
-              <div className="contenedorImagen">
-                <img src={industrialmetal} alt="Industrial metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Grindcore</h3>
-              <div className="contenedorImagen">
-                <img src={grindcore} alt="Grindcore bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Gothic Metal</h3>
-              <div className="contenedorImagen">
-                <img src={gothicmetal} alt="Gothic metal bands" />
-              </div>
-            </li>
-          </ul>
-
-          <ul className="cardContainer">
-            <li className="breedCard">
-              <h3>Folk Metal</h3>
-              <div className="contenedorImagen">
-                <img src={folkmetal} alt="Folk metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Doom Metal</h3>
-              <div className="contenedorImagen">
-                <img src={doommetal} alt="Doom metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Progressive Metal</h3>
-              <div className="contenedorImagen">
-                <img src={progressivemetal} alt="Progressive metal bands" />
-              </div>
-            </li>
-
-            <li className="breedCard">
-              <h3>Nu Metal</h3>
-              <div className="contenedorImagen">
-                <img src={numetal} alt="Nu metal bands" />
-              </div>
-            </li>
+            <CardGeneros
+              nombreGenero="Thrash Metal"
+              imagen={thrashmetal}
+              alt="Thrash metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Heavy Metal"
+              imagen={heavymetal}
+              alt="Heavy metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Death Metal"
+              imagen={deathmetal}
+              alt="Death metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Black Metal"
+              imagen={blackmetal}
+              alt="Black metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Power Metal"
+              imagen={powermetal}
+              alt="Power metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Industrial Metal"
+              imagen={industrialmetal}
+              alt="Industrial metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Grindcore"
+              imagen={grindcore}
+              alt="Grindcore bands"
+            />
+            <CardGeneros
+              nombreGenero="Gothic Metal"
+              imagen={gothicmetal}
+              alt="Gothic metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Folk Metal"
+              imagen={folkmetal}
+              alt="Folk metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Doom Metal"
+              imagen={doommetal}
+              alt="Doom metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Progressive Metal"
+              imagen={progressivemetal}
+              alt="Progressive metal bands"
+            />
+            <CardGeneros
+              nombreGenero="Nu Metal"
+              imagen={numetal}
+              alt="Nu metal bands"
+            />
           </ul>
         </section>
         <section></section>
       </main>
       <footer></footer>
     </div>
+  );
+}
+
+function CardGeneros({ nombreGenero, imagen, alt }) {
+  return (
+    <li className="breedCard">
+      <h3>{nombreGenero}</h3>
+      <div className="contenedorImagen">
+        <img src={imagen} alt={alt} />
+      </div>
+    </li>
   );
 }
 
