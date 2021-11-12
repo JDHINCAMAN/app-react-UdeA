@@ -9,6 +9,21 @@ ul {
   margin: 0px;
 }
 
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainContainer > main {
+  height: 100%;
+}
+
+.mainContainer > footer {
+  background-color: rgb(189, 92, 36);
+  padding: 15px;
+}
+
 .navbar {
   background-color: darkgray;
   display: flex;
