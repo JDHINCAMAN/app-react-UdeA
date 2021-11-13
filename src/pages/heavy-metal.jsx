@@ -1,11 +1,11 @@
 import Layout from "../layouts/layout";
 
-function HeavyMetalInfo() {
+const HeavyMetalInfo = () => {
   return (
     <Layout>
       <div>Informacion hevy metal</div>
     </Layout>
   );
-}
+};
 
 export default HeavyMetalInfo;

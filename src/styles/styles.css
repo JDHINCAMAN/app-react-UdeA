@@ -13,15 +13,17 @@ ul {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 }
 
 .mainContainer > main {
   height: 100%;
+  overflow: scroll;
 }
 
 .mainContainer > footer {
   background-color: rgb(189, 92, 36);
-  padding: 15px;
+  padding: 5px;
 }
 
 .navbar {
@@ -39,7 +41,7 @@ ul {
 }
 
 .logo {
-  height: 60px;
+  height: 50px;
 }
 
 .logo:hover {
@@ -119,7 +121,8 @@ ul {
 }
 
 .cardContainer {
-  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
   margin: 50px;
 }
 
