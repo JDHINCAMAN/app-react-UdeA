@@ -37,51 +37,61 @@ function Index() {
             nombreGenero="Death Metal"
             imagen={deathmetal}
             alt="Death metal bands"
+            ruta="/death-metal"
           />
           <CardGeneros
             nombreGenero="Black Metal"
             imagen={blackmetal}
             alt="Black metal bands"
+            ruta="/black-metal"
           />
           <CardGeneros
             nombreGenero="Power Metal"
             imagen={powermetal}
             alt="Power metal bands"
+            ruta="/power-metal"
           />
           <CardGeneros
             nombreGenero="Industrial Metal"
             imagen={industrialmetal}
             alt="Industrial metal bands"
+            ruta="/industrial-metal"
           />
           <CardGeneros
             nombreGenero="Grindcore"
             imagen={grindcore}
             alt="Grindcore bands"
+            ruta="/grindcore"
           />
           <CardGeneros
             nombreGenero="Gothic Metal"
             imagen={gothicmetal}
             alt="Gothic metal bands"
+            ruta="/gothic-metal"
           />
           <CardGeneros
             nombreGenero="Folk Metal"
             imagen={folkmetal}
             alt="Folk metal bands"
+            ruta="/folk-metal"
           />
           <CardGeneros
             nombreGenero="Doom Metal"
             imagen={doommetal}
             alt="Doom metal bands"
+            ruta="/doom-metal"
           />
           <CardGeneros
             nombreGenero="Progressive Metal"
             imagen={progressivemetal}
             alt="Progressive metal bands"
+            ruta="/progressive-metal"
           />
           <CardGeneros
             nombreGenero="Nu Metal"
             imagen={numetal}
             alt="Nu metal bands"
+            ruta="/nu-metal"
           />
         </ul>
       </section>
